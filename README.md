@@ -80,9 +80,13 @@ Everything from the original HTML file is kept:
 
 Server-side additions:
 
-- **Export** downloads a JSON of everything (same shape as the old file's export —
-  you can import data exported from the old HTML workspace).
-- **Import** replaces the current user's data with an uploaded export file.
+- **Export** (topbar) downloads a **PDF report** of the whole workspace: progress,
+  all sections and tasks with your answers, sources, evidence and section takeaways,
+  plus the calculation definitions and Germany starter sources as an appendix.
+  Cyrillic-capable DejaVu fonts are bundled in `src/fonts/` (fpdf2, no system font needed).
+- **Меню → Експорт JSON (бекап)** downloads a JSON of everything (same shape as the
+  old file's export — you can import data exported from the old HTML workspace).
+- **Import** replaces the current user's data with an uploaded JSON backup file.
 - **Меню → Змінити пароль** changes the password; **Вийти** logs out.
 
 ## Local development (without Docker)
@@ -103,11 +107,13 @@ GBV_DATA_DIR=../data uvicorn main:app --reload --port 8000
 ├── requirements.txt
 ├── .env.example
 └── src/
-    ├── main.py        # FastAPI routes: auth, state, evidence, custom tasks, import/export
+    ├── main.py        # FastAPI routes: auth, state, evidence, custom tasks, import/export, PDF
+    ├── pdf.py         # PDF report generator (fpdf2 + bundled DejaVu fonts)
     ├── auth.py        # PBKDF2 hashing, sessions, rate limiting, origin checks
     ├── db.py          # SQLite schema + bootstrap
     ├── config.py      # env-driven settings
-    └── static/        # UI: index/login pages, app.js, styles.css, content.js (questionnaire data)
+    ├── fonts/         # DejaVu Sans (regular/bold) for Cyrillic PDF output
+    └── static/        # UI: pages, app.js, styles.css, content.json (questionnaire data)
 ```
 
 This repository contains only the application. The original single-file HTML

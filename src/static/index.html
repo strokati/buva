@@ -15,12 +15,13 @@
   <div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" class="search" placeholder="Пошук по завданнях, keywords, evidence…"></div>
   <div class="toolbar">
     <button class="btn" id="printBtn" title="Print / PDF">⤓ <span>Print</span></button>
-    <a class="btn" href="/api/export" download title="Export JSON">⇩ <span>Export</span></a>
+    <a class="btn" href="/api/export/pdf" download title="Експорт у PDF">⇩ <span>Export</span></a>
     <label class="btn" title="Import JSON"><span>⇧ Import</span><input id="importFile" type="file" accept="application/json" hidden></label>
     <details class="menu" id="userMenu">
       <summary class="btn" title="Меню користувача">⚙ <span>Меню</span></summary>
       <div class="menu-panel">
         <div class="menu-user">Користувач<b id="menuUser">—</b></div>
+        <a class="menu-item" href="/api/export" download>Експорт JSON (бекап)</a>
         <button class="menu-item" id="changePwBtn" type="button">Змінити пароль</button>
         <form method="post" action="/logout"><button class="menu-item danger" type="submit">Вийти</button></form>
       </div>
@@ -77,7 +78,6 @@
 </div>
 
 <div class="toast" id="toast" role="status"></div>
-<script src="/static/content.js"></script>
 <script src="/static/app.js"></script>
 </body>
 </html>

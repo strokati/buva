@@ -1,10 +1,10 @@
 /* Business Validation Workspace — frontend.
-   Static questionnaire content: window.GBV_CONTENT (content.js).
+   Static questionnaire content: fetched from /static/content.json.
    User data: fetched from /api/state, autosaved to SQLite via the API. */
 (() => {
 "use strict";
 
-const C = window.GBV_CONTENT;
+let C = null; // questionnaire content, loaded before anything renders
 const $ = id => document.getElementById(id);
 
 let state = { tasks: {}, sections: {}, customTasks: [], username: "" };
@@ -48,9 +48,11 @@ function debounce(key, fn, ms = 600) {
 
 // --- state ------------------------------------------------------------------
 
-const contentTaskIds = C.sections.flatMap(s => s.tasks.map(t => t.id));
 const customKey = ct => `CUSTOM-${ct.id}`;
-const knownTaskIds = () => [...contentTaskIds, ...state.customTasks.map(customKey)];
+const knownTaskIds = () => [
+  ...C.sections.flatMap(s => s.tasks.map(t => t.id)),
+  ...state.customTasks.map(customKey),
+];
 
 function taskState(id) {
   if (!state.tasks[id]) state.tasks[id] = { answer: "", source: "", status: "Open", confidence: "D", evidence: [] };
@@ -454,7 +456,9 @@ function bindEvents() {
 
 // --- boot -----------------------------------------------------------------------------
 
-reloadState()
+fetch("/static/content.json")
+  .then(r => { if (!r.ok) throw new Error("content: " + r.status); return r.json(); })
+  .then(content => { C = content; return reloadState(); })
   .then(() => { render(); bindEvents(); })
   .catch(e => { if (e.message !== "unauthorized") { document.body.insertAdjacentHTML("beforeend", `<div class="toast show">Не вдалося завантажити дані: ${esc(e.message)}</div>`); } });
 })();

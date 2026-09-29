@@ -1,6 +1,7 @@
+**/__pycache__
+**/*.pyc
 data/
 .env
-__pycache__/
-*.pyc
 .git/
 README.md
+.venv/

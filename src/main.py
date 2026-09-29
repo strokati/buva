@@ -9,12 +9,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, UploadFile
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 import auth
 import db
+import pdf
 from auth import SESSION_COOKIE
 from config import COOKIE_SECURE, MAX_IMPORT_BYTES, SESSION_TTL_DAYS  # noqa: F401
 
@@ -347,6 +348,17 @@ def api_export(user=Depends(get_user), conn=Depends(get_conn)):
     return JSONResponse(
         content=payload,
         headers={"Content-Disposition": 'attachment; filename="germany-business-validation-data.json"'},
+    )
+
+
+@app.get("/api/export/pdf")
+def api_export_pdf(user=Depends(get_user), conn=Depends(get_conn)):
+    state = _state_payload(conn, user["id"])
+    data = pdf.build_pdf(state, user["username"])
+    return Response(
+        content=data,
+        media_type="application/pdf",
+        headers={"Content-Disposition": 'attachment; filename="germany-business-validation-report.pdf"'},
     )
 
 

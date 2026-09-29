@@ -1,6 +1,4 @@
-// Auto-generated from Germany_Business_Validation_Workspace.html — static questionnaire content.
-// User answers live in SQLite on the server; this file is only the template.
-window.GBV_CONTENT = {
+{
  "sections": [
   {
    "num": 1,
@@ -1811,4 +1809,4 @@ window.GBV_CONTENT = {
   ]
  ],
  "version": "29 вересня 2026"
-};
+}
