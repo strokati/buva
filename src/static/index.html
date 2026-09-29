@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="description" content="Germany-first business idea validation workspace with research tasks, examples, notes, evidence tracking and autosave.">
+<title>Germany Business Validation Workspace</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Ctext x='16' y='23' font-size='17' font-family='sans-serif' font-weight='800' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">GBV <small>Business Validation Workspace</small></div>
+  <div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" class="search" placeholder="Пошук по завданнях, keywords, evidence…"></div>
+  <div class="toolbar">
+    <button class="btn" id="printBtn" title="Print / PDF">⤓ <span>Print</span></button>
+    <a class="btn" href="/api/export" download title="Export JSON">⇩ <span>Export</span></a>
+    <label class="btn" title="Import JSON"><span>⇧ Import</span><input id="importFile" type="file" accept="application/json" hidden></label>
+    <details class="menu" id="userMenu">
+      <summary class="btn" title="Меню користувача">⚙ <span>Меню</span></summary>
+      <div class="menu-panel">
+        <div class="menu-user">Користувач<b id="menuUser">—</b></div>
+        <button class="menu-item" id="changePwBtn" type="button">Змінити пароль</button>
+        <form method="post" action="/logout"><button class="menu-item danger" type="submit">Вийти</button></form>
+      </div>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="side-title">Sections</div>
+    <nav class="nav" id="sideNav"></nav>
+    <div class="side-title mt">Reference</div>
+    <nav class="nav">
+      <a href="#toc"><span class="dot"></span><span>Зміст</span></a>
+      <a href="#appendix-use"><span class="dot"></span><span>How to use</span></a>
+      <a href="#appendix-calcs"><span class="dot"></span><span>Calculations</span></a>
+      <a href="#germany-sources"><span class="dot"></span><span>Germany sources</span></a>
+    </nav>
+  </aside>
+  <main class="main" id="app"></main>
+</div>
+
+<div class="modal-backdrop" id="taskModal">
+  <div class="modal">
+    <h3>Додати власне завдання</h3>
+    <label for="newTitle">Назва</label>
+    <input id="newTitle" placeholder="Наприклад: Перевірити DIN / галузевий стандарт">
+    <label for="newInstruction">Що потрібно записати</label>
+    <textarea id="newInstruction" placeholder="Які саме дані або докази потрібно знайти?"></textarea>
+    <label for="newExample">Фіктивний приклад</label>
+    <textarea id="newExample" placeholder="Короткий приклад того, як може виглядати відповідь."></textarea>
+    <div class="modal-actions">
+      <button class="btn" id="taskModalClose" type="button">Закрити</button>
+      <button class="btn" id="taskModalCancel" type="button">Скасувати</button>
+      <button class="btn primary" id="taskModalSave" type="button">Додати завдання</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="pwModal">
+  <div class="modal">
+    <h3>Змінити пароль</h3>
+    <label for="pwCurrent">Поточний пароль</label>
+    <input id="pwCurrent" type="password" autocomplete="current-password">
+    <label for="pwNew">Новий пароль (мін. 8 символів)</label>
+    <input id="pwNew" type="password" autocomplete="new-password">
+    <label for="pwNew2">Новий пароль ще раз</label>
+    <input id="pwNew2" type="password" autocomplete="new-password">
+    <div class="error" id="pwError"></div>
+    <div class="modal-actions">
+      <button class="btn" id="pwCancel" type="button">Скасувати</button>
+      <button class="btn primary" id="pwSave" type="button">Зберегти</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="/static/content.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

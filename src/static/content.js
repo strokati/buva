@@ -1,0 +1,1814 @@
+// Auto-generated from Germany_Business_Validation_Workspace.html — static questionnaire content.
+// User answers live in SQLite on the server; this file is only the template.
+window.GBV_CONTENT = {
+ "sections": [
+  {
+   "num": 1,
+   "title": "Business Idea & Hypotheses",
+   "objective": "Сформулювати бізнес-ідею як набір перевірюваних тверджень, а не як презентаційну історію.",
+   "example": "Фіктивний приклад: «SaaS для німецьких Handwerksbetriebe, який автоматично нагадує клієнтам про підтвердження замовлення і зменшує ручну роботу офісу». Це гіпотеза, а не твердження про реальний ринок.",
+   "tasks": [
+    {
+     "id": "I-001",
+     "title": "Що саме продаємо?",
+     "instruction": "Напиши продукт або послугу у 1–3 реченнях без маркетингових прикрас.",
+     "example": "Фіктивний приклад: «SaaS за €99/міс. для малих Handwerksbetriebe, який автоматично нагадує клієнтам про підтвердження замовлення»."
+    },
+    {
+     "id": "I-002",
+     "title": "Яку проблему вирішуємо?",
+     "instruction": "Опиши конкретний pain або job-to-be-done: що сьогодні незручно, дорого, повільно або ризиковано.",
+     "example": "Фіктивний приклад: «Офіс-адміністратор витрачає близько 6 годин на тиждень на повторні нагадування; частина замовлень зависає без підтвердження»."
+    },
+    {
+     "id": "I-003",
+     "title": "Для кого?",
+     "instruction": "Визнач первинний сегмент і не змішуй кілька різних аудиторій в одну.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "I-004",
+     "title": "Чому зараз?",
+     "instruction": "Зафіксуй ринкову, технологічну, поведінкову або регуляторну зміну, яка створює вікно можливості.",
+     "example": "Фіктивний приклад: «Новий цифровий workflow інтегрується з наявною CRM без ручного введення даних» — це треба довести даними, а не припускати."
+    },
+    {
+     "id": "I-005",
+     "title": "Який measurable outcome?",
+     "instruction": "Що клієнт отримає у вимірюваній формі: час, гроші, конверсія, ризик, зручність тощо.",
+     "example": "Фіктивний приклад: «Зменшити ручну роботу з 6 до 2 годин на тиждень на одну компанію»."
+    },
+    {
+     "id": "I-006",
+     "title": "Як клієнт вирішує проблему зараз?",
+     "instruction": "Опиши status quo, включаючи ручні процеси, spreadsheets, персонал або конкурентні продукти.",
+     "example": "Фіктивний приклад: «Excel + Outlook + ручні дзвінки; новий співробітник вчиться процесу 2–3 дні»."
+    },
+    {
+     "id": "I-007",
+     "title": "Що запускає зміну поведінки?",
+     "instruction": "Знайди trigger, після якого клієнт готовий шукати інше рішення.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "I-008",
+     "title": "У чому наша differentiation hypothesis?",
+     "instruction": "Одна конкретна причина, чому клієнт може вибрати нас, а не альтернативу.",
+     "example": "Фіктивний приклад: «Підключення за 30 хвилин без зміни основної CRM»."
+    },
+    {
+     "id": "I-009",
+     "title": "Як виникає дохід?",
+     "instruction": "Вкажи revenue unit та модель: subscription, one-time, commission, usage-based тощо.",
+     "example": "Фіктивний приклад: revenue unit = активна компанія/місяць; ціна €99 net/month."
+    },
+    {
+     "id": "I-010",
+     "title": "Які 3 assumptions найнебезпечніші?",
+     "instruction": "Вибери припущення, помилка в яких знищить економіку або попит.",
+     "example": "Фіктивний приклад: «CAC ≤ €300; churn ≤ 2.5%/міс.; gross margin ≥ 70%». Порушення будь-якого порогу запускає повторну перевірку."
+    }
+   ],
+   "phase": [
+    "01",
+    "DEFINE",
+    "Формулювання"
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Target Customer",
+   "objective": "Визначити користувача, платника та особу, що приймає рішення, особливо для німецького B2B.",
+   "example": "Фіктивний приклад: первинний ICP — невелика німецька Handwerksfirma з 5–30 працівниками; користувач — офіс-адміністратор, платить власник, рішення приймає Geschäftsführer.",
+   "tasks": [
+    {
+     "id": "C-001",
+     "title": "Хто користувач?",
+     "instruction": "Роль, професія, поведінка, контекст використання.",
+     "example": "Фіктивний приклад: користувач = офіс-адміністратор; щодня працює з замовленнями та follow-ups."
+    },
+    {
+     "id": "C-002",
+     "title": "Хто платить?",
+     "instruction": "Конкретна persona або бюджетний центр.",
+     "example": "Фіктивний приклад: платить Geschäftsführer із бюджету Software/Administration."
+    },
+    {
+     "id": "C-003",
+     "title": "Хто приймає рішення?",
+     "instruction": "Decision maker, influencer, закупівлі, власник, IT або інша роль.",
+     "example": "Фіктивний приклад: користувач — Bürokraft, influencer — Meister, decision maker — Geschäftsführer."
+    },
+    {
+     "id": "C-004",
+     "title": "B2B, B2C чи B2B2C?",
+     "instruction": "Зафіксуй customer journey і хто має договір з тобою.",
+     "example": "Фіктивний приклад: B2B SaaS; договір укладається з юридичною особою, end user може бути іншим."
+    },
+    {
+     "id": "C-005",
+     "title": "Який сегмент у Німеччині?",
+     "instruction": "Галузь, розмір компанії, вік, дохід, Bundesland, місто або інша релевантна ознака.",
+     "example": "Фіктивний приклад: 5–30 працівників, Handwerk, Nordrhein-Westfalen; не змішувати з великими підприємствами."
+    },
+    {
+     "id": "C-006",
+     "title": "Який trigger покупки?",
+     "instruction": "Подія, через яку проблему вже не можна ігнорувати.",
+     "example": "Фіктивний приклад: «Пік сезонних замовлень збільшує кількість незабезпечених follow-ups; після цього власник починає шукати автоматизацію»."
+    },
+    {
+     "id": "C-007",
+     "title": "Як часто проблема виникає?",
+     "instruction": "Частота проблеми за місяць/квартал/рік.",
+     "example": "Фіктивний приклад: проблема виникає 20–40 разів на місяць у типовій компанії."
+    },
+    {
+     "id": "C-008",
+     "title": "Який бюджет уже витрачається?",
+     "instruction": "Поточні витрати на альтернативу, персонал, інструменти або втрати.",
+     "example": "Фіктивний приклад: компанія вже витрачає €180/міс. на суміжні інструменти та приблизно 6 годин адміністративного часу/тиждень."
+    },
+    {
+     "id": "C-009",
+     "title": "Яка основна альтернатива?",
+     "instruction": "Що клієнт реально робить замість купівлі нового продукту.",
+     "example": "Фіктивний приклад: Excel + Outlook, додатковий працівник або існуючий CRM-module."
+    },
+    {
+     "id": "C-010",
+     "title": "Чому клієнт скаже «ні»?",
+     "instruction": "Збери потенційні objections до ціни, довіри, інтеграції, GDPR, звичок тощо.",
+     "example": "Фіктивний приклад: «Не хочемо мігрувати дані»; «GDPR unclear»; «€99 дорожче за Excel»."
+    }
+   ],
+   "phase": [
+    "01",
+    "DEFINE",
+    "Клієнт"
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Market Size",
+   "objective": "Порахувати реальний німецький ринок bottom-up і перевірити його незалежною top-down оцінкою.",
+   "example": "Фіктивний приклад розрахунку: 40 000 потенційних фірм × 50% serviceable × €1 200 річного spend = €24 млн SAM. Кожне число має мати джерело або чітке припущення.",
+   "tasks": [
+    {
+     "id": "M-001",
+     "title": "Скільки потенційних клієнтів існує?",
+     "instruction": "Кількість потенційних customers у Німеччині та джерело цифри.",
+     "example": "Фіктивний приклад: 40 000 компаній у релевантному SIC/WZ-сегменті; число треба підтвердити статистикою."
+    },
+    {
+     "id": "M-002",
+     "title": "Яка частка реально serviceable?",
+     "instruction": "Скільки з них відповідає твоєму ICP та географії.",
+     "example": "Фіктивний приклад: 50% із потенційної бази реально підходять за розміром, регіоном і use case."
+    },
+    {
+     "id": "M-003",
+     "title": "Яка частота покупки?",
+     "instruction": "Транзакції/клієнта/рік або місяць.",
+     "example": "Фіктивний приклад: «Пік сезонних замовлень збільшує кількість незабезпечених follow-ups; після цього власник починає шукати автоматизацію»."
+    },
+    {
+     "id": "M-004",
+     "title": "Який середній чек?",
+     "instruction": "Net revenue per transaction/customer без подвійного рахунку VAT.",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    },
+    {
+     "id": "M-005",
+     "title": "Який SAM?",
+     "instruction": "Serviceable customers × annual spend.",
+     "example": "Фіктивний приклад: 40 000 × 50% × €1 200 annual spend = €24 млн SAM."
+    },
+    {
+     "id": "M-006",
+     "title": "Який реалістичний SOM на 3 роки?",
+     "instruction": "Яка частка доступна при реальних обмеженнях продажів і capacity.",
+     "example": "Фіктивний приклад: за 3 роки 300 клієнтів × €1 200 = €360 тис. annual revenue; обґрунтувати sales capacity."
+    },
+    {
+     "id": "M-007",
+     "title": "Який темп росту ринку?",
+     "instruction": "YoY або CAGR + період + географія.",
+     "example": "Фіктивний приклад: зафіксувати окремо 2023→2024 та 2024→2025 YoY для Germany, а не глобальний CAGR."
+    },
+    {
+     "id": "M-008",
+     "title": "Чи є сезонність?",
+     "instruction": "Місячні або квартальні піки/провали.",
+     "example": "Фіктивний приклад: 30% річних лідів припадає на Q1; перевірити реальними місячними даними."
+    },
+    {
+     "id": "M-009",
+     "title": "Які регіональні відмінності?",
+     "instruction": "Bundesländer, міста, щільність клієнтів, купівельна спроможність.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "M-010",
+     "title": "Які інші методи дають інший результат?",
+     "instruction": "Зроби cross-check і поясни розбіжності.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "02",
+    "MARKET",
+    "Ринок"
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Demand Validation",
+   "objective": "Відокремити інтерес до теми від наміру купувати.",
+   "example": "Фіктивний приклад: тестувати німецькі комерційні запити на кшталт «Terminbestätigung Software Handwerk» або близькі problem-oriented запити; потім перевіряти не clicks, а qualified leads і paid pilots.",
+   "tasks": [
+    {
+     "id": "D-001",
+     "title": "Які transactional keywords?",
+     "instruction": "Buy, price, service, bestellen, kaufen, Kosten тощо.",
+     "example": "Фіктивний приклад: 20 commercial/problem keywords; оцінювати volume → CPC → qualified leads → paid pilots."
+    },
+    {
+     "id": "D-002",
+     "title": "Які commercial keywords?",
+     "instruction": "Best, Anbieter, Vergleich, Alternative, Lösung.",
+     "example": "Фіктивний приклад: 20 commercial/problem keywords; оцінювати volume → CPC → qualified leads → paid pilots."
+    },
+    {
+     "id": "D-003",
+     "title": "Який обсяг попиту в DE?",
+     "instruction": "Search volume, trend і language variants.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "D-004",
+     "title": "Яка CPC?",
+     "instruction": "CPC за комерційними ключами як сигнал конкурентності та monetizable demand.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "D-005",
+     "title": "Чи росте попит?",
+     "instruction": "Trend за достатнім періодом, а не одним місяцем.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "D-006",
+     "title": "Які acquisition channels уже працюють у конкурентів?",
+     "instruction": "SEO, Ads, outbound, marketplace, partner, local sales.",
+     "example": "Фіктивний приклад: у 3 конкурентів повторюються complaints про onboarding і приховані fees; зафіксувати посилання на review."
+    },
+    {
+     "id": "D-007",
+     "title": "Який conversion threshold?",
+     "instruction": "Наперед визнач мінімальну landing-page conversion.",
+     "example": "Фіктивний приклад: 1 000 Germany ICP visits → 35 qualified leads = 3.5% lead conversion."
+    },
+    {
+     "id": "D-008",
+     "title": "Який lead-cost threshold?",
+     "instruction": "Максимальна прийнятна ціна ліда з урахуванням close rate.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "D-009",
+     "title": "Який перший paid experiment?",
+     "instruction": "Конкретна аудиторія, оффер, бюджет, тривалість, primary metric.",
+     "example": "Фіктивний приклад: «offer через економію часу → landing conversion ≥3%»; budget €300; sample 1 000 visits; pass/fail визначити наперед."
+    },
+    {
+     "id": "D-010",
+     "title": "Що вважатимемо недостатнім попитом?",
+     "instruction": "Kill criterion, заданий до тесту.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "02",
+    "MARKET",
+    "Попит"
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Customer Research",
+   "objective": "Підтвердити проблему через реальну поведінку клієнтів, а не через побажання.",
+   "example": "Фіктивний приклад: замість питання «чи користувалися б ви SaaS?» запитати про останній випадок, коли співробітнику довелося вручну нагадувати клієнту. Записати час, cost і фактичну дію.",
+   "tasks": [
+    {
+     "id": "CR-001",
+     "title": "Скільки інтерв’ю проведено?",
+     "instruction": "Кількість + сегмент + роль респондента.",
+     "example": "Фіктивний приклад: 12 інтерв’ю; 8 описали конкретну недавню проблему; 4 погодились на paid pilot."
+    },
+    {
+     "id": "CR-002",
+     "title": "Як клієнти описують проблему своїми словами?",
+     "instruction": "Запиши дослівні фрази без перефразування.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-003",
+     "title": "Коли востаннє проблема траплялась?",
+     "instruction": "Конкретна недавня ситуація.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-004",
+     "title": "Що вони реально зробили?",
+     "instruction": "Actual behavior, не те, що вони «зробили б».",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-005",
+     "title": "Скільки це коштувало?",
+     "instruction": "Гроші + час + внутрішній ресурс.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-006",
+     "title": "Що не подобається у current alternative?",
+     "instruction": "Повторювані pain points.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-007",
+     "title": "Що може змусити перейти?",
+     "instruction": "Trigger, switching cost, risk tolerance.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-008",
+     "title": "Який budget range?",
+     "instruction": "Спочатку actual spend, потім willingness-to-pay.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-009",
+     "title": "Чи погодились на pilot / waitlist?",
+     "instruction": "Зафіксуй commitment.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CR-010",
+     "title": "Чи був реальний платіж?",
+     "instruction": "Найсильніший сигнал: deposit, pre-sale, paid pilot, recurring payment.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "02",
+    "MARKET",
+    "Клієнтське дослідження"
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Competitor Analysis",
+   "objective": "Побачити конкурентну карту: хто продає, кому, за скільки, через який канал і з якими слабкими місцями.",
+   "example": "Фіктивний приклад: для трьох конкурентів знайти published pricing, onboarding fee, contract term і 20–50 reviews; окремо виписати повторювані complaints.",
+   "tasks": [
+    {
+     "id": "CO-001",
+     "title": "Хто 10–30 головних конкурентів у DE?",
+     "instruction": "Компанія + URL + сегмент.",
+     "example": "Фіктивний приклад: у 3 конкурентів повторюються complaints про onboarding і приховані fees; зафіксувати посилання на review."
+    },
+    {
+     "id": "CO-002",
+     "title": "Хто international competitors?",
+     "instruction": "Компанія + географія + релевантність для входу в DE.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CO-003",
+     "title": "Яка ціна кожного?",
+     "instruction": "Entry / typical / premium price.",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    },
+    {
+     "id": "CO-004",
+     "title": "Що входить у ціну?",
+     "instruction": "Features, service level, onboarding, support, limits.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CO-005",
+     "title": "Який ICP конкурента?",
+     "instruction": "Кому він продає насправді.",
+     "example": "Фіктивний приклад: у 3 конкурентів повторюються complaints про onboarding і приховані fees; зафіксувати посилання на review."
+    },
+    {
+     "id": "CO-006",
+     "title": "Які acquisition channels?",
+     "instruction": "SEO, ads, sales team, partners, directories.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CO-007",
+     "title": "Що клієнти хвалять?",
+     "instruction": "Повторювані позитивні themes з відгуків.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CO-008",
+     "title": "На що скаржаться?",
+     "instruction": "Повторювані негативні themes.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CO-009",
+     "title": "Які gaps?",
+     "instruction": "Нереалізовані потреби, features, service, geography, price.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CO-010",
+     "title": "Який наш moat hypothesis?",
+     "instruction": "Що буде складно скопіювати через 6–24 місяці.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "02",
+    "MARKET",
+    "Конкуренти"
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Pricing",
+   "objective": "Визначити ціну через customer value, альтернативу та тест, а не через бажаний прибуток.",
+   "example": "Фіктивний приклад: перевірити €49 / €99 / €149 на місяць. Не вважати дорожчу ціну кращою лише тому, що вона дає більшу виручку: дивитися на conversion × margin × retention.",
+   "tasks": [
+    {
+     "id": "P-001",
+     "title": "Який price range конкурентів?",
+     "instruction": "Min / median / max та умови.",
+     "example": "Фіктивний приклад: у 3 конкурентів повторюються complaints про onboarding і приховані fees; зафіксувати посилання на review."
+    },
+    {
+     "id": "P-002",
+     "title": "Скільки коштує status quo?",
+     "instruction": "Поточні витрати клієнта.",
+     "example": "Фіктивний приклад: «Excel + Outlook + ручні дзвінки; новий співробітник вчиться процесу 2–3 дні»."
+    },
+    {
+     "id": "P-003",
+     "title": "Яка економічна цінність?",
+     "instruction": "Скільки грошей/часу/ризику продукт може реально впливати.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "P-004",
+     "title": "Яка test price?",
+     "instruction": "Перша ціна для market test.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "P-005",
+     "title": "Які 3 price points тестувати?",
+     "instruction": "Низький / базовий / високий.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "P-006",
+     "title": "Чи потрібні tiers?",
+     "instruction": "Good / better / best або інша логіка пакетів.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "P-007",
+     "title": "Які правила знижок?",
+     "instruction": "Максимум, підстава, annual prepay, volume.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "P-008",
+     "title": "Як ціна змінює conversion?",
+     "instruction": "Збирай дані по кожній ціні.",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    },
+    {
+     "id": "P-009",
+     "title": "Як ціна змінює gross profit?",
+     "instruction": "Розрахуй вплив на contribution margin.",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    },
+    {
+     "id": "P-010",
+     "title": "Який pricing kill criterion?",
+     "instruction": "Наприклад: нижче певної ціни economics не працює.",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Pricing"
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Business Model",
+   "objective": "Перевірити механіку заробляння грошей та cash conversion.",
+   "example": "Фіктивний приклад: revenue unit = active company/month. Net revenue €99, direct variable costs €19 → gross profit €80 → gross margin ≈ 81%. Це лише ілюстрація формули.",
+   "tasks": [
+    {
+     "id": "BM-001",
+     "title": "Що є revenue unit?",
+     "instruction": "Customer, order, seat, transaction, usage.",
+     "example": "Фіктивний приклад: revenue unit = активна компанія/місяць; ціна €99 net/month."
+    },
+    {
+     "id": "BM-002",
+     "title": "Як виникає recurring revenue?",
+     "instruction": "Subscription, repeat purchase, renewal.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "BM-003",
+     "title": "Який AOV / ARPA?",
+     "instruction": "Середня виручка на транзакцію або account.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "BM-004",
+     "title": "Яка gross margin по revenue stream?",
+     "instruction": "Не усереднюй різні продукти без причини.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "BM-005",
+     "title": "Який churn / retention?",
+     "instruction": "Monthly / annual, когорта якщо можливо.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "BM-006",
+     "title": "Які refunds / chargebacks?",
+     "instruction": "Фактична або консервативна оцінка.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "BM-007",
+     "title": "Чи є upsell / cross-sell?",
+     "instruction": "Expansion revenue і момент, коли він виникає.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "BM-008",
+     "title": "Які payment fees?",
+     "instruction": "Відсоток + fixed fee.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "BM-009",
+     "title": "Які B2B payment terms?",
+     "instruction": "Наприклад 14/30/60 days і вплив на cash flow.",
+     "example": "Фіктивний приклад: B2B SaaS; договір укладається з юридичною особою, end user може бути іншим."
+    },
+    {
+     "id": "BM-010",
+     "title": "Який cash conversion cycle?",
+     "instruction": "Коли гроші реально надходять проти витрат.",
+     "example": "Фіктивний приклад: 1 000 Germany ICP visits → 35 qualified leads = 3.5% lead conversion."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Модель"
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Acquisition & Marketing",
+   "objective": "Перевірити, чи є економічно життєздатний шлях до перших і наступних клієнтів.",
+   "example": "Фіктивний приклад: Google Ads → landing page → demo → paid pilot. При €1 000 spend отримано 20 qualified leads і 4 customers: CAC = €250. Далі порівняти з допустимим CAC із unit economics.",
+   "tasks": [
+    {
+     "id": "A-001",
+     "title": "Які 3 найреалістичніші канали?",
+     "instruction": "Обґрунтуй на основі ICP і конкурентів.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-002",
+     "title": "Які CPC / CPM / CPA benchmarks?",
+     "instruction": "Джерело кожного benchmark.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-003",
+     "title": "Який funnel?",
+     "instruction": "Impression → click → lead → qualified → sale.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-004",
+     "title": "Який target CAC?",
+     "instruction": "Максимум CAC, який витримує модель.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "A-005",
+     "title": "Який conversion rate потрібен?",
+     "instruction": "Backsolve від CAC і economics.",
+     "example": "Фіктивний приклад: 1 000 Germany ICP visits → 35 qualified leads = 3.5% lead conversion."
+    },
+    {
+     "id": "A-006",
+     "title": "Який sales cycle?",
+     "instruction": "Дні/тижні від контакту до грошей.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-007",
+     "title": "Яка роль founder-led sales?",
+     "instruction": "Скільки продажів можна зробити вручну на старті.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-008",
+     "title": "Які партнерства?",
+     "instruction": "Партнери, associations, resellers, platforms.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-009",
+     "title": "Чи є SEO moat?",
+     "instruction": "Не просто traffic, а захищувана distribution advantage.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "A-010",
+     "title": "Що тестуємо першим платно?",
+     "instruction": "Один experiment з чітким threshold.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Acquisition"
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Unit Economics",
+   "objective": "Зрозуміти, чи кожен новий клієнт створює позитивний економічний внесок.",
+   "example": "Фіктивний приклад: CAC €250, monthly gross profit €80 → simple CAC payback ≈ 3,1 місяця. Перевір, чи ця економіка витримує churn і support costs.",
+   "tasks": [
+    {
+     "id": "UE-001",
+     "title": "Revenue per customer",
+     "instruction": "Net revenue per customer за визначений період.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "UE-002",
+     "title": "Variable cost per customer",
+     "instruction": "Усі прямі variable costs: payment, API, fulfilment, support тощо.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "UE-003",
+     "title": "Gross profit per customer",
+     "instruction": "Revenue − direct variable cost.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "UE-004",
+     "title": "Gross margin %",
+     "instruction": "Gross profit / revenue.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "UE-005",
+     "title": "CAC",
+     "instruction": "Sales + marketing acquisition spend / new paying customers.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "UE-006",
+     "title": "LTV",
+     "instruction": "Консервативний expected gross profit за customer lifetime.",
+     "example": "Фіктивний приклад: €80 monthly gross profit × 20-month modeled lifetime = €1 600 LTV; зробити retention assumption explicit."
+    },
+    {
+     "id": "UE-007",
+     "title": "LTV / CAC",
+     "instruction": "Показник ефективності economics, а не універсальний закон.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "UE-008",
+     "title": "CAC payback",
+     "instruction": "CAC / monthly gross profit per customer.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "UE-009",
+     "title": "Contribution after CAC",
+     "instruction": "Скільки залишається після variable costs і acquisition.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "UE-010",
+     "title": "Maximum tolerable CAC",
+     "instruction": "Виведи з payback, cash і цільової маржі.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Unit economics"
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Costs",
+   "objective": "Порахувати повну собівартість запуску й експлуатації, включаючи витрати, які часто забувають.",
+   "example": "Фіктивний приклад: щомісяця €200 accounting, €100 software, €70 insurance, €500 marketing base + founder time; окремо variable costs per customer. Не записувати VAT як operating expense там, де він є refundable input VAT.",
+   "tasks": [
+    {
+     "id": "CT-001",
+     "title": "One-time launch costs",
+     "instruction": "Setup, legal, design, equipment, deposits.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "CT-002",
+     "title": "Monthly fixed costs",
+     "instruction": "Software, accounting, insurance, base overhead.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "CT-003",
+     "title": "Variable cost per order",
+     "instruction": "Production, fulfilment, payment, variable support.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "CT-004",
+     "title": "People cost",
+     "instruction": "Gross salary + employer costs; не рахуй тільки net salary.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "CT-005",
+     "title": "Marketing spend",
+     "instruction": "План по місяцях і каналах.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CT-006",
+     "title": "Cloud / infrastructure",
+     "instruction": "Expected usage, not only flat subscription.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CT-007",
+     "title": "Professional services",
+     "instruction": "Tax adviser, lawyer, consultants.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CT-008",
+     "title": "Refunds / bad debt",
+     "instruction": "Консервативна частка revenue.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "CT-009",
+     "title": "Founder opportunity cost",
+     "instruction": "Вартість власного часу або альтернативної роботи.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "CT-010",
+     "title": "Emergency buffer",
+     "instruction": "Скільки місяців fixed burn хочеш мати як запас.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Витрати"
+   ]
+  },
+  {
+   "num": 12,
+   "title": "36-Month Financial Model",
+   "objective": "Перетворити всі припущення у місячну модель cash flow на 36 місяців.",
+   "example": "Фіктивний приклад: стартовий cash €20 000; перші 6 місяців негативний cash flow; модель повинна показати мінімальний cash balance, break-even month і додатковий funding need до заданого buffer.",
+   "tasks": [
+    {
+     "id": "FM-001",
+     "title": "Starting cash",
+     "instruction": "Гроші, реально доступні для venture після особистих фінансових потреб.",
+     "example": "Фіктивний приклад: стартовий cash €20 000; 6 місяців negative cash flow; модель має показати мінімальний cash buffer і місяць break-even."
+    },
+    {
+     "id": "FM-002",
+     "title": "Monthly customers / orders",
+     "instruction": "Base case і джерело припущення.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "FM-003",
+     "title": "Average price",
+     "instruction": "Net of VAT when appropriate.",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    },
+    {
+     "id": "FM-004",
+     "title": "Revenue",
+     "instruction": "Формула від customer/order volume × price.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "FM-005",
+     "title": "Variable costs",
+     "instruction": "Формула від обсягу.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "FM-006",
+     "title": "Gross profit",
+     "instruction": "Revenue − variable costs.",
+     "example": "Фіктивний приклад: €99 net revenue − €19 direct variable cost = €80 gross profit; gross margin ≈ 81%."
+    },
+    {
+     "id": "FM-007",
+     "title": "Fixed operating costs",
+     "instruction": "Fixed monthly cost base.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "FM-008",
+     "title": "Operating result",
+     "instruction": "Gross profit − operating costs.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "FM-009",
+     "title": "Tax reserve",
+     "instruction": "Planning reserve; не підміняє tax advice.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "FM-010",
+     "title": "Ending cash",
+     "instruction": "Starting cash + cash inflows − cash outflows.",
+     "example": "Фіктивний приклад: стартовий cash €20 000; 6 місяців negative cash flow; модель має показати мінімальний cash buffer і місяць break-even."
+    },
+    {
+     "id": "FM-011",
+     "title": "Break-even month",
+     "instruction": "Визнач заздалегідь, що саме вважається break-even.",
+     "example": "Фіктивний приклад: €5 000 monthly fixed costs / €80 gross profit per customer = 63 active customers для простого monthly break-even."
+    },
+    {
+     "id": "FM-012",
+     "title": "Maximum cash burn",
+     "instruction": "Найгірша очікувана точка cash drawdown.",
+     "example": "Фіктивний приклад: стартовий cash €20 000; 6 місяців negative cash flow; модель має показати мінімальний cash buffer і місяць break-even."
+    },
+    {
+     "id": "FM-013",
+     "title": "Funding need",
+     "instruction": "Скільки додаткових коштів потрібно до заданого buffer.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "FM-014",
+     "title": "Cash runway",
+     "instruction": "Місяці до порушення мінімального cash buffer.",
+     "example": "Фіктивний приклад: стартовий cash €20 000; 6 місяців negative cash flow; модель має показати мінімальний cash buffer і місяць break-even."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Фінанси"
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Scenarios & Sensitivity",
+   "objective": "Побачити, що станеться при зміні ключових параметрів.",
+   "example": "Фіктивний приклад: якщо CAC зростає з €250 до €450, monthly gross profit лишається €80, payback зростає з 3,1 до 5,6 місяців. Перевір, що стається з cash runway.",
+   "tasks": [
+    {
+     "id": "SC-001",
+     "title": "Worst case inputs",
+     "instruction": "Нижчий demand, вищий CAC, слабший retention, вищі costs.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "SC-002",
+     "title": "Base case inputs",
+     "instruction": "Найкращі доступні evidence-based assumptions.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "SC-003",
+     "title": "Best case inputs",
+     "instruction": "Upside case, але без фантазійних показників.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "SC-004",
+     "title": "Price sensitivity",
+     "instruction": "Наприклад −20% / base / +20%.",
+     "example": "Фіктивний приклад: CAC €250 → €450 подовжує payback; перерахувати cash runway, а не лише прибуток."
+    },
+    {
+     "id": "SC-005",
+     "title": "CAC sensitivity",
+     "instruction": "Low / base / high acquisition cost.",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "SC-006",
+     "title": "Conversion sensitivity",
+     "instruction": "Low / base / high conversion.",
+     "example": "Фіктивний приклад: 1 000 Germany ICP visits → 35 qualified leads = 3.5% lead conversion."
+    },
+    {
+     "id": "SC-007",
+     "title": "Retention sensitivity",
+     "instruction": "Churn / retention variants.",
+     "example": "Фіктивний приклад: CAC €250 → €450 подовжує payback; перерахувати cash runway, а не лише прибуток."
+    },
+    {
+     "id": "SC-008",
+     "title": "Cost inflation sensitivity",
+     "instruction": "Зміни критичних vendor/people costs.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "SC-009",
+     "title": "Break-even sensitivity",
+     "instruction": "Як threshold змінюється при шоках.",
+     "example": "Фіктивний приклад: €5 000 monthly fixed costs / €80 gross profit per customer = 63 active customers для простого monthly break-even."
+    },
+    {
+     "id": "SC-010",
+     "title": "Що ламає модель першим?",
+     "instruction": "Знайди одну-дві найбільш критичні змінні.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "03",
+    "ECONOMICS",
+    "Sensitivity"
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Germany Legal / Tax / Compliance",
+   "objective": "Перевірити специфічні для Німеччини вимоги до запуску до моменту, коли юридична помилка стане дорогою.",
+   "example": "Фіктивний приклад: визначити Rechtsform, Gewerbe/Freiberuflichkeit, VAT treatment, Kleinunternehmer question, Gewerbesteuer у конкретній Gemeinde, E-Rechnung, DSGVO, Impressum/AGB та sector permits. Юридичні висновки підтверджувати актуальними офіційними джерелами або фахівцем.",
+   "tasks": [
+    {
+     "id": "DE-001",
+     "title": "Яка Rechtsform?",
+     "instruction": "Einzelunternehmen / GbR / UG / GmbH або інша форма + rationale.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-002",
+     "title": "Gewerbe чи Freiberuflichkeit?",
+     "instruction": "Визнач класифікацію і підтверди компетентним джерелом.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-003",
+     "title": "Яка Haftung?",
+     "instruction": "Особиста чи обмежена відповідальність.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-004",
+     "title": "Як працює Umsatzsteuer?",
+     "instruction": "VAT treatment для кожного revenue stream.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-005",
+     "title": "Чи підходить Kleinunternehmerregelung?",
+     "instruction": "Eligibility, economic fit і наслідки для Vorsteuer.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-006",
+     "title": "Яка Gewerbesteuer?",
+     "instruction": "Врахуй муніципальний Hebesatz конкретного місця діяльності.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-007",
+     "title": "Яка Einkommen-/Körperschaftsteuer model?",
+     "instruction": "Залежить від Rechtsform і структури доходу.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-008",
+     "title": "E-Rechnung",
+     "instruction": "Чи треба отримувати/виставляти E-Rechnungen і які перехідні правила діють.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-009",
+     "title": "Buchführung / EÜR / Bilanz",
+     "instruction": "Який accounting режим застосовується.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-010",
+     "title": "OSS / EU B2C",
+     "instruction": "Чи потрібен OSS для cross-border B2C.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-011",
+     "title": "DSGVO / Datenschutz",
+     "instruction": "Data processing, DPA, privacy notice, retention, vendors.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-012",
+     "title": "Impressum / AGB / Widerruf",
+     "instruction": "Особливо важливо для online B2C.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-013",
+     "title": "Versicherungen",
+     "instruction": "Betriebshaftpflicht, Berufshaftpflicht та інші, залежно від діяльності.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-014",
+     "title": "Industry-specific permits",
+     "instruction": "Genehmigungen, licences, Handwerksrecht, спеціальні вимоги.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-015",
+     "title": "Employees / payroll",
+     "instruction": "Employer duties, payroll, social insurance, onboarding.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-016",
+     "title": "Freelancers / Scheinselbstständigkeit",
+     "instruction": "Коли співпраця з freelancer може створити ризик.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-017",
+     "title": "Marke / IP",
+     "instruction": "Trademark search, rights ownership, licenses.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-018",
+     "title": "Banking / payment",
+     "instruction": "Business account, KYC, payment processor requirements.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-019",
+     "title": "Recordkeeping",
+     "instruction": "Зберігання invoices, contracts та інших business records.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "DE-020",
+     "title": "Professional advice",
+     "instruction": "Визнач, де потрібні Steuerberater / Rechtsanwalt / IHK.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "04",
+    "GERMANY",
+    "Німеччина"
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Operations",
+   "objective": "Перевірити, чи можна стабільно доставити цінність клієнту без ручного хаосу.",
+   "example": "Фіктивний приклад: після sale система створює customer, відправляє onboarding, отримує data, запускає workflow, логгує outcome і передає дані в бухгалтерію. Намалюй процес та знайди ручні bottlenecks.",
+   "tasks": [
+    {
+     "id": "OP-001",
+     "title": "Core process",
+     "instruction": "Кроки від sale до delivery + owner кожного кроку.",
+     "example": "Фіктивний приклад: Lead → qualification → contract → onboarding → delivery → invoice → support → renewal; кожен ручний крок оцінити в хвилинах."
+    },
+    {
+     "id": "OP-002",
+     "title": "Suppliers / vendors",
+     "instruction": "Залежності та replacement options.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-003",
+     "title": "SLA / delivery time",
+     "instruction": "Обіцяний і реальний performance.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-004",
+     "title": "Support load",
+     "instruction": "Очікувані години support на клієнта.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-005",
+     "title": "Returns / cancellations",
+     "instruction": "Процедура і cost impact.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-006",
+     "title": "Payment reconciliation",
+     "instruction": "Хто і як звіряє платежі.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-007",
+     "title": "Accounting handoff",
+     "instruction": "Які документи потрібні бухгалтерії.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-008",
+     "title": "Security / backups",
+     "instruction": "Backups, access control, recovery.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-009",
+     "title": "Single points of failure",
+     "instruction": "Founder, vendor, platform, one supplier.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "OP-010",
+     "title": "Capacity at scale",
+     "instruction": "Що відбувається при 100 / 500 / 1,000 customers.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "04",
+    "GERMANY",
+    "Operations"
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Risk Register",
+   "objective": "Зробити ризики явними, оцінити їх і прив’язати до конкретних mitigation actions.",
+   "example": "Фіктивний приклад: risk «CAC удвічі вищий за план». Probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale + sales qualification.",
+   "tasks": [
+    {
+     "id": "R-001",
+     "title": "Market risk",
+     "instruction": "Evidence / probability / impact + mitigation.",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-002",
+     "title": "Demand risk",
+     "instruction": "Що станеться, якщо попит буде нижчим?",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-003",
+     "title": "Pricing risk",
+     "instruction": "Що станеться, якщо клієнти не приймуть ціну?",
+     "example": "Фіктивний приклад: price points €49 / €99 / €149 net per month; перевіряти conversion і retention, а не лише інтерес."
+    },
+    {
+     "id": "R-004",
+     "title": "Competition risk",
+     "instruction": "Що робимо при aggressive response конкурента?",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-005",
+     "title": "CAC risk",
+     "instruction": "Що робимо, якщо acquisition дорожчий?",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "R-006",
+     "title": "Cash risk",
+     "instruction": "Який мінімальний cash buffer і trigger для зупинки spend?",
+     "example": "Фіктивний приклад: стартовий cash €20 000; 6 місяців negative cash flow; модель має показати мінімальний cash buffer і місяць break-even."
+    },
+    {
+     "id": "R-007",
+     "title": "Legal risk",
+     "instruction": "Які питання можуть заблокувати запуск?",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-008",
+     "title": "Operational risk",
+     "instruction": "Що може зламати delivery?",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-009",
+     "title": "Founder dependency",
+     "instruction": "Що зупиниться без тебе?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "R-010",
+     "title": "Technology risk",
+     "instruction": "Вендор, API, security, outages, technical debt.",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-011",
+     "title": "Reputation risk",
+     "instruction": "Які помилки створять втрати довіри?",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    },
+    {
+     "id": "R-012",
+     "title": "Regulatory change risk",
+     "instruction": "Які правила потенційно можуть змінити economics?",
+     "example": "Фіктивний приклад: Risk = CAC удвічі вищий за план; probability = medium; impact = high; mitigation = другий acquisition channel + pre-sale."
+    }
+   ],
+   "phase": [
+    "04",
+    "GERMANY",
+    "Ризики"
+   ]
+  },
+  {
+   "num": 17,
+   "title": "MVP & Paid Validation",
+   "objective": "Перевірити найкритичнішу гіпотезу найдешевшим способом до великої розробки.",
+   "example": "Фіктивний приклад: замість будувати повний продукт провести 10 paid pilots вручну. Success threshold: ≥5 customers pay and ≥60% use case completion. Це лише приклад thresholds — їх треба задавати під конкретну ідею.",
+   "tasks": [
+    {
+     "id": "V-001",
+     "title": "Яка critical hypothesis?",
+     "instruction": "Одна найбільш небезпечна невідомість.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "V-002",
+     "title": "Який MVP-тест?",
+     "instruction": "Manual service, landing page, prototype, concierge, pilot.",
+     "example": "Фіктивний приклад: провести 10 paid pilots вручну до повної розробки; pass = ≥5 оплат і ≥60% completion use case."
+    },
+    {
+     "id": "V-003",
+     "title": "Який мінімальний бюджет?",
+     "instruction": "Бюджет тесту з upper limit.",
+     "example": "Фіктивний приклад: компанія вже витрачає €180/міс. на суміжні інструменти та приблизно 6 годин адміністративного часу/тиждень."
+    },
+    {
+     "id": "V-004",
+     "title": "Який target sample?",
+     "instruction": "Visitors, interviews, leads, pilots або transactions.",
+     "example": "Фіктивний приклад: 40 000 × 50% × €1 200 annual spend = €24 млн SAM."
+    },
+    {
+     "id": "V-005",
+     "title": "Який success threshold?",
+     "instruction": "Постав до старту тесту.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    },
+    {
+     "id": "V-006",
+     "title": "Який failure threshold?",
+     "instruction": "Червона лінія.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    },
+    {
+     "id": "V-007",
+     "title": "Як перевірити willingness-to-pay?",
+     "instruction": "Pre-sale, deposit, paid pilot або recurring payment.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "V-008",
+     "title": "Які vanity metrics ігноруємо?",
+     "instruction": "Likes, followers, cheap clicks без business outcome.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "V-009",
+     "title": "Що змінюємо після тесту?",
+     "instruction": "Predefined decision rule.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "V-010",
+     "title": "Чи можна тест до повної реєстрації/розробки?",
+     "instruction": "Окремо перевір юридичні й операційні умови.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "05",
+    "VALIDATION",
+    "MVP"
+   ]
+  },
+  {
+   "num": 18,
+   "title": "Experiments",
+   "objective": "Вести всі експерименти як контрольовані перевірки, а не як набір маркетингових дій.",
+   "example": "Фіктивний приклад експерименту: «Якщо offer сформульований через економію годин, landing conversion буде ≥3% серед Germany ICP traffic». Budget €300, sample 1 000 visits. До запуску визначити pass/fail.",
+   "tasks": [
+    {
+     "id": "EX-001",
+     "title": "Experiment name",
+     "instruction": "Коротка назва.",
+     "example": "Фіктивний приклад: «offer через економію часу → landing conversion ≥3%»; budget €300; sample 1 000 visits; pass/fail визначити наперед."
+    },
+    {
+     "id": "EX-002",
+     "title": "Hypothesis",
+     "instruction": "Falsifiable statement у формі: якщо X, то Y.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EX-003",
+     "title": "Method",
+     "instruction": "Як саме перевіряємо.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EX-004",
+     "title": "Audience",
+     "instruction": "Хто входить у тест.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EX-005",
+     "title": "Sample / budget",
+     "instruction": "Кількість + EUR budget.",
+     "example": "Фіктивний приклад: 40 000 × 50% × €1 200 annual spend = €24 млн SAM."
+    },
+    {
+     "id": "EX-006",
+     "title": "Primary metric",
+     "instruction": "Одна ключова метрика.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EX-007",
+     "title": "Pass threshold",
+     "instruction": "Мінімум для позитивного сигналу.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    },
+    {
+     "id": "EX-008",
+     "title": "Fail threshold",
+     "instruction": "Максимум / red line.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    },
+    {
+     "id": "EX-009",
+     "title": "Observed result",
+     "instruction": "Фактичний результат.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EX-010",
+     "title": "Decision",
+     "instruction": "Keep / change / stop + next action.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    }
+   ],
+   "phase": [
+    "05",
+    "VALIDATION",
+    "Experiments"
+   ]
+  },
+  {
+   "num": 19,
+   "title": "Evidence Log",
+   "objective": "Зберігати provenance кожного важливого твердження й цифри.",
+   "example": "Фіктивний приклад доказу: «DE B2B VAT rule» → source type: official law → URL + date accessed → exact paragraph → implication for pricing model. Не записувати просто «BMF каже…».",
+   "tasks": [
+    {
+     "id": "EL-001",
+     "title": "Evidence ID",
+     "instruction": "Унікальний ID доказу.",
+     "example": "Фіктивний приклад: факт + URL + дата + exact reference + коротке пояснення, як він змінює модель."
+    },
+    {
+     "id": "EL-002",
+     "title": "Claim",
+     "instruction": "Яке твердження цей доказ підтримує або спростовує.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EL-003",
+     "title": "Source type",
+     "instruction": "Official / competitor / interview / review / experiment.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "EL-004",
+     "title": "Source",
+     "instruction": "URL, файл або ідентифікатор респондента/експерименту.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "EL-005",
+     "title": "Date",
+     "instruction": "Коли інформацію побачено або отримано.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EL-006",
+     "title": "Geography",
+     "instruction": "Germany / Bundesland / city / DACH / EU.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EL-007",
+     "title": "Reference period",
+     "instruction": "До якого періоду належить цифра.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EL-008",
+     "title": "Finding",
+     "instruction": "Точний результат без інтерпретації.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EL-009",
+     "title": "Confidence",
+     "instruction": "A/B/C/D за правилами цього документа.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "EL-010",
+     "title": "Implication",
+     "instruction": "Який input моделі змінюється.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "05",
+    "VALIDATION",
+    "Evidence"
+   ]
+  },
+  {
+   "num": 20,
+   "title": "Assumptions & Decision Thresholds",
+   "objective": "Не дозволити бажаному результату непомітно стати «фактом».",
+   "example": "Фіктивний приклад: assumption «CAC ≤ €300». Target ≤ €300; validation = paid acquisition test; impact if wrong = funding need + runway. Якщо фактичний CAC €600, assumption rejected.",
+   "tasks": [
+    {
+     "id": "AS-001",
+     "title": "Assumption",
+     "instruction": "Одне припущення в одному реченні.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-002",
+     "title": "Current value",
+     "instruction": "Поточне числове або текстове значення.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-003",
+     "title": "Source / basis",
+     "instruction": "Чому ти зараз у це віриш.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "AS-004",
+     "title": "Target value",
+     "instruction": "Що повинно стати правдою.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-005",
+     "title": "Validation method",
+     "instruction": "Як перевіряємо.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-006",
+     "title": "Deadline / stage",
+     "instruction": "На якому етапі рішення це повинно бути доведено.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-007",
+     "title": "Owner",
+     "instruction": "Хто відповідальний за перевірку.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-008",
+     "title": "Impact if wrong",
+     "instruction": "Фінансовий або стратегічний наслідок.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-009",
+     "title": "Status",
+     "instruction": "Open / validated / rejected.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "AS-010",
+     "title": "Decision threshold",
+     "instruction": "Умова Go / Pivot / Kill.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    }
+   ],
+   "phase": [
+    "05",
+    "VALIDATION",
+    "Thresholds"
+   ]
+  },
+  {
+   "num": 21,
+   "title": "Final Decision: Go / Pivot / Kill",
+   "objective": "Звести всі докази до дисциплінованого рішення без «середньої оцінки», яка приховає критичний провал.",
+   "example": "Фіктивний приклад: проблема підтверджена 12 інтерв’ю, є 5 paid pilots, gross margin достатня, CAC поки не доведений. У такому випадку рішення може бути не GO, а умовний наступний validation step — не підмінюй відсутній доказ оптимізмом.",
+   "tasks": [
+    {
+     "id": "GD-001",
+     "title": "Customer problem",
+     "instruction": "Чи є проблема реальною, повторюваною і важливою?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-002",
+     "title": "Demand",
+     "instruction": "Чи є measurable demand у цільовому сегменті?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-003",
+     "title": "Willingness-to-pay",
+     "instruction": "Чи є реальна фінансова commitment?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-004",
+     "title": "Competitive position",
+     "instruction": "Чи існує правдоподібний спосіб зайти і диференціюватися?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-005",
+     "title": "Unit economics",
+     "instruction": "Чи створює клієнт позитивний contribution?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-006",
+     "title": "CAC feasibility",
+     "instruction": "Чи можна купувати customer за прийнятною ціною?",
+     "example": "Фіктивний приклад: €1 000 acquisition spend / 4 new paying customers = €250 CAC."
+    },
+    {
+     "id": "GD-007",
+     "title": "Cash requirement",
+     "instruction": "Чи можливо профінансувати validation і runway?",
+     "example": "Фіктивний приклад: стартовий cash €20 000; 6 місяців negative cash flow; модель має показати мінімальний cash buffer і місяць break-even."
+    },
+    {
+     "id": "GD-008",
+     "title": "Legal blockers",
+     "instruction": "Чи є блокуючі правові або регуляторні питання?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-009",
+     "title": "Operational feasibility",
+     "instruction": "Чи можна надійно доставляти продукт?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-010",
+     "title": "Most important unknown",
+     "instruction": "Що ще треба довести перед великим spend?",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "GD-011",
+     "title": "Decision",
+     "instruction": "GO / PIVOT / KILL — тільки після заповнення evidence.",
+     "example": "Фіктивний приклад: threshold = CAC ≤ €300; actual = €600 → assumption rejected і запускається наступний validation step."
+    },
+    {
+     "id": "GD-012",
+     "title": "Reason",
+     "instruction": "2–5 речень з прямими посиланнями на ключові докази.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    }
+   ],
+   "phase": [
+    "06",
+    "DECISION",
+    "Рішення"
+   ]
+  },
+  {
+   "num": 22,
+   "title": "Source Library",
+   "objective": "Зібрати джерела так, щоб будь-яку ключову цифру можна було швидко перевірити повторно.",
+   "example": "Фіктивний приклад: окремо зберігати Destatis source, BMF/legal source, competitor pricing pages, customer evidence, ad experiment results і vendor prices; кожному джерелу дати дату останньої перевірки.",
+   "tasks": [
+    {
+     "id": "SRC-001",
+     "title": "Official Germany source",
+     "instruction": "Law / ministry / authority.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "SRC-002",
+     "title": "Market statistics",
+     "instruction": "Destatis / official statistics / industry body.",
+     "example": "Фіктивний приклад: у відповідь внеси конкретний факт, цифру або спостереження, яке можна перевірити; познач, що це лише ілюстрація формату."
+    },
+    {
+     "id": "SRC-003",
+     "title": "Competitor source",
+     "instruction": "Pricing / product / terms.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "SRC-004",
+     "title": "Customer source",
+     "instruction": "Review / interview / survey.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "SRC-005",
+     "title": "Demand source",
+     "instruction": "Keywords / trends / ads.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "SRC-006",
+     "title": "Cost source",
+     "instruction": "Vendor price / official tariff.",
+     "example": "Фіктивний приклад: accounting €200 + software €100 + insurance €70 + base marketing €500/month; variable costs окремо."
+    },
+    {
+     "id": "SRC-007",
+     "title": "Tax source",
+     "instruction": "BMF / law / official guidance.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "SRC-008",
+     "title": "Legal source",
+     "instruction": "BMJ / authority / regulator.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    },
+    {
+     "id": "SRC-009",
+     "title": "Experiment source",
+     "instruction": "Analytics / ad platform / payment evidence.",
+     "example": "Фіктивний приклад: «offer через економію часу → landing conversion ≥3%»; budget €300; sample 1 000 visits; pass/fail визначити наперед."
+    },
+    {
+     "id": "SRC-010",
+     "title": "Last reviewed",
+     "instruction": "Дата, коли source перевірено востаннє.",
+     "example": "Фіктивний приклад: Destatis/BMF/competitor page/review/ad report; зберегти URL, дату доступу та точний показник."
+    }
+   ],
+   "phase": [
+    "06",
+    "DECISION",
+    "Sources"
+   ]
+  }
+ ],
+ "calcDefs": [
+  [
+   "TAM",
+   "Теоретичний весь ринок: potential customers × annual spend."
+  ],
+  [
+   "SAM",
+   "Частина TAM, яку реально можна обслуговувати за заданою географією, сегментом і продуктом."
+  ],
+  [
+   "SOM",
+   "Реалістично досяжна частка SAM з урахуванням distribution, capacity та конкуренції."
+  ],
+  [
+   "Net Revenue",
+   "Виручка без VAT там, де VAT не є доходом бізнесу."
+  ],
+  [
+   "Gross Profit",
+   "Net Revenue − direct variable costs."
+  ],
+  [
+   "Gross Margin",
+   "Gross Profit / Net Revenue."
+  ],
+  [
+   "CAC",
+   "Sales + marketing acquisition spend / new paying customers. Не додавай загальний overhead без чіткої причини."
+  ],
+  [
+   "LTV",
+   "Очікуваний сумарний gross profit від customer relationship. Використовуй консервативний retention/churn."
+  ],
+  [
+   "LTV/CAC",
+   "LTV / CAC. Корисний decision metric, але не універсальний закон."
+  ],
+  [
+   "CAC Payback",
+   "CAC / monthly gross profit per customer. Показує, скільки місяців потрібно для recovery CAC."
+  ],
+  [
+   "Break-even",
+   "Момент, коли defined break-even condition виконується. Для повної моделі використовуй cumulative operating cash flow, а не лише прибуток на одному місяці."
+  ],
+  [
+   "Cash Runway",
+   "Час до порушення заданого minimum cash buffer за поточними assumptions."
+  ]
+ ],
+ "phaseNames": {
+  "DEFINE": "Define the problem",
+  "MARKET": "Understand the market",
+  "ECONOMICS": "Prove the economics",
+  "GERMANY": "Germany reality",
+  "VALIDATION": "Validate in the real world",
+  "DECISION": "Make the decision"
+ },
+ "phaseDescriptions": {
+  "DEFINE": "Спочатку визначаємо, що саме має бути доведено.",
+  "MARKET": "Перевіряємо реальний попит, клієнта, ринок і альтернативи.",
+  "ECONOMICS": "Перекладаємо ринок у ціну, CAC, LTV, margin і cash.",
+  "GERMANY": "Окремо перевіряємо німецьку юридичну, податкову та операційну реальність.",
+  "VALIDATION": "Переходимо від research до поведінки і реальних платежів.",
+  "DECISION": "Фіксуємо thresholds і приймаємо рішення на базі доказів."
+ },
+ "starterSources": [
+  [
+   "BMF — E-Rechnung FAQ",
+   "Податкові правила та перехідні строки щодо E‑Rechnung.",
+   "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html"
+  ],
+  [
+   "Gesetze im Internet — §19 UStG",
+   "Чинний текст правила Kleinunternehmerregelung.",
+   "https://www.gesetze-im-internet.de/ustg_1980/__19.html"
+  ],
+  [
+   "Existenzgründungsportal — Rechtsformen",
+   "Офіційна інформація про Rechtsform, Haftung та формальні обов’язки.",
+   "https://www.existenzgruendungsportal.de/Redaktion/DE/Gruendungswissen/Rechtsformen/Rechtsformen"
+  ],
+  [
+   "Destatis",
+   "Офіційна статистика для bottom-up market sizing.",
+   "https://www.destatis.de/"
+  ],
+  [
+   "BMF — FAQ",
+   "Офіційні податкові FAQ та оновлення.",
+   "https://www.bundesfinanzministerium.de/Web/DE/Service/FAQ_Glossar/FAQ/faq.html"
+  ]
+ ],
+ "version": "29 вересня 2026"
+};
